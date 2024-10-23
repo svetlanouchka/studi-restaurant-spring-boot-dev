@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: restaurant-reservation
+  datasource:
+    url: jdbc:sqlite:restaurant.db
+    driver-class-name: org.sqlite.JDBC
+  jpa:
+    database-platform: org.hibernate.community.dialect.SQLiteDialect
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
+
+    server:
+      port: 8080
